@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphel Security | The Ultimate Discord Bot</title>
+    
+    <!-- Shield Favicon to stop the 404 error -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
+    <!-- Tailwind CSS for Advanced Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        
+        /* Animated Gradient Background Blob */
+        .bg-blob {
+            position: absolute; width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(255,255,255,0) 70%);
+            top: -100px; left: -100px; z-index: -1;
+            animation: pulse 6s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.1); opacity: 1; }
+        }
+
+        /* Glassmorphism Card Hover Effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden text-slate-800">
+
+    <div class="bg-blob"></div>
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center glass-card mt-4 rounded-full shadow-sm sticky top-4 z-50">
+        <div class="flex items-center gap-2">
+            <!-- Simulated Logo -->
+            <div class="w-8 h-8 bg-slate-900 rounded-md flex items-center justify-center text-white font-bold italic">R</div>
+            <span class="font-bold text-xl tracking-tight"><a href="/">Raphel <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Security</span></a></span>
+        </div>
+        <div class="hidden md:flex gap-8 font-semibold text-slate-600">
+            <a href="/" class="text-blue-600 transition">Home</a>
+            <a href="#" class="hover:text-blue-600 transition">Commands</a>
+            <a href="#" class="hover:text-blue-600 transition">About</a>
+            <a href="/privacy" class="hover:text-blue-600 transition">Privacy</a>
+            <a href="/terms" class="hover:text-blue-600 transition">Terms</a>
+        </div>
+        <a href="#" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">
+            Invite &rarr;
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-24 text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="inline-block bg-white px-4 py-1.5 rounded-full shadow-sm text-sm font-semibold text-slate-600 mb-6 border border-slate-100">
+            🛡️ Trusted by serious communities
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Raphel <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Security</span>
+        </h1>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-10">
+            The Ultimate Security Bot For Servers. Raphel is a powerful all-in-one Discord bot built for serious communities. Anti-nuke protection, moderation, music, giveaways, and more.
+        </p>
+        
+        <div class="flex justify-center gap-4 mb-16">
+            <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-blue-500/30 hover:-translate-y-1 transition-all">Add to Discord &rarr;</a>
+            <a href="#" class="bg-white text-slate-700 px-8 py-3 rounded-xl font-bold shadow-md hover:-translate-y-1 transition-all border border-slate-100">Join Support</a>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="glass-card p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="text-4xl font-extrabold text-blue-600 mb-1">200K+</h3>
+                <p class="text-slate-500 font-semibold uppercase text-sm tracking-wider">Users Protected</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-4xl font-extrabold text-purple-600 mb-1">64</h3>
+                <p class="text-slate-500 font-semibold uppercase text-sm tracking-wider">Commands</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="text-4xl font-extrabold text-indigo-600 mb-1">99.9%</h3>
+                <p class="text-slate-500 font-semibold uppercase text-sm tracking-wider">Uptime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Everything your server needs</h2>
+            <p class="text-slate-500">Carefully crafted modules that work together seamlessly.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Feature 1 -->
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 text-2xl">🛡️</div>
+                <h3 class="text-xl font-bold mb-3">Anti-Nuke Protection</h3>
+                <p class="text-slate-500">Comprehensive anti-nuke system that protects your server from mass bans, channel deletions, and webhook abuse.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6 text-2xl">⚡</div>
+                <h3 class="text-xl font-bold mb-3">Smart Auto-Mod</h3>
+                <p class="text-slate-500">Anti-spam, anti-caps, anti-raid mode, and night mode — keeping your server clean around the clock.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-6 text-2xl">🎵</div>
+                <h3 class="text-xl font-bold mb-3">Music Player</h3>
+                <p class="text-slate-500">High-quality music from multiple sources with queue management, lyrics, loop modes, and 24/7 mode.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AOS Script for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Scroll Animations
+        AOS.init({
+            once: true, // Whether animation should happen only once - while scrolling down
+            offset: 100 // offset (in px) from the original trigger point
+        });
+    </script>
+</body>
+</html>

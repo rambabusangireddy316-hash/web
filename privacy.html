@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Raphel Security</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .bg-blob {
+            position: absolute; width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(255,255,255,0) 70%);
+            top: -100px; left: -100px; z-index: -1;
+            animation: pulse 6s infinite alternate;
+        }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(1.1); opacity: 1; } }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5); }
+    </style>
+</head>
+<body class="relative overflow-x-hidden text-slate-800">
+    <div class="bg-blob"></div>
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center glass-card mt-4 rounded-full shadow-sm sticky top-4 z-50">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-slate-900 rounded-md flex items-center justify-center text-white font-bold italic">R</div>
+            <span class="font-bold text-xl tracking-tight"><a href="/">Raphel <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Security</span></a></span>
+        </div>
+        <div class="hidden md:flex gap-8 font-semibold text-slate-600">
+            <a href="/" class="hover:text-blue-600 transition">Home</a>
+            <a href="/privacy" class="text-blue-600 transition">Privacy</a>
+            <a href="/terms" class="hover:text-blue-600 transition">Terms</a>
+        </div>
+        <a href="#" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all">Invite &rarr;</a>
+    </nav>
+
+    <!-- Privacy Content -->
+    <section class="max-w-4xl mx-auto px-6 py-24">
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold tracking-tight mb-4">Privacy <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Policy</span></h1>
+            <p class="text-slate-500">Last updated: July 2026</p>
+        </div>
+
+        <div class="glass-card p-10 rounded-3xl shadow-sm space-y-8">
+            <div>
+                <h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span>🕐</span> Overview</h3>
+                <p class="text-slate-600 leading-relaxed">Raphel ("we", "our", "us") is a Discord bot operated by its development team. This Privacy Policy explains what data Raphel collects, how it is used, and your rights regarding your data. By using Raphel, you agree to this policy.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span>💬</span> Data We Collect</h3>
+                <p class="text-slate-600 leading-relaxed mb-2">Raphel collects only the minimum data necessary to function. This includes:</p>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                    <li><strong>Server IDs</strong> — to store per-server configuration.</li>
+                    <li><strong>User IDs</strong> — for whitelist management, warn records, and AFK status.</li>
+                    <li><strong>Channel & Role IDs</strong> — for configuration storage.</li>
+                    <li><strong>Moderation records</strong> — warns, bans, mutes stored for moderation logging.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span>🛡️</span> Data We Do NOT Collect</h3>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                    <li>Message content (except temporarily for snipe commands).</li>
+                    <li>Voice audio or recordings.</li>
+                    <li>Email addresses, personal info, or payment data.</li>
+                    <li>DM (direct message) content.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-3 flex items-center gap-2"><span>🔓</span> Data Retention & Deletion</h3>
+                <p class="text-slate-600 leading-relaxed">Configuration data is retained while Raphel is present in your server. When removed, data may be cleaned up automatically. To request immediate deletion, contact us through our support server.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
